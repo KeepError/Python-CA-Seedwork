@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ca-seedwork-rest-api-example"
+version = "0.1.0"
+description = ""
+authors = ["Egor Kuziakov <egor.kuziakov@gmail.com>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.20"
+sqlalchemy-utils = "^0.41.1"
+ca-seedwork = {path = "../..", develop = true}
+ca-seedwork-sqlalchemy-postgresql = {path = "../../modules/sqlalchemy-postgresql", develop = true}
+fastapi = "^0.101.1"
+pydantic-settings = "^2.0.3"
+psycopg2-binary = "^2.9.7"
+uvicorn = "^0.23.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

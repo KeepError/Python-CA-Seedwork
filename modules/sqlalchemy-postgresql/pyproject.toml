@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ca-seedwork-sqlalchemy-postgresql"
+version = "0.1.0"
+description = ""
+authors = ["Egor Kuziakov <egor.kuziakov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ca_seedwork_sqlalchemy_postgresql"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ca-seedwork = {path = "../..", develop = true}
+sqlalchemy = "^2.0.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
